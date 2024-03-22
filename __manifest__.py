@@ -9,7 +9,7 @@
     'auto_install': True,
     'assets': {
         'web.assets_backend': [
-            'web_hide_zero_monetary/static/src/legacy/js/fields/*',
+            'web_hide_zero_monetary/static/src/views/**/*',
         ],
     },
     'license': 'LGPL-3',
