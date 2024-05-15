@@ -1,9 +1,11 @@
 /** @odoo-module **/
 
-import  * as formatters  from "@web/views/fields/formatters";
+import { formatFloat } from "@web/views/fields/formatters";
 
 import { registry } from "@web/core/registry";
+import { nbsp } from "@web/core/utils/strings";
 import { session } from "@web/session";
+import { humanNumber } from "@web/core/utils/numbers";
 
 export function formatMonetary(value, options = {}) {
     // Monetary fields want to display nothing when the value is unset.
